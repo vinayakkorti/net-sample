@@ -34,4 +34,4 @@ steps:
 
 - task: BatchScript@1
   inputs:
-        filename: '.createfile.bat'
+        filename: 'createfile.bat'
