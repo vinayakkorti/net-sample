@@ -35,3 +35,10 @@ steps:
 - task: BatchScript@1
   inputs:
         filename: 'createfile.bat'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+      targetPath: '$(Pipeline.Workspace)'
+      artifact: '.netapp'
+      publishLocation: 'pipeline'
+
