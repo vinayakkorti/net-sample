@@ -50,5 +50,11 @@ steps:
       artifact: '.netapp'
       publishLocation: 'pipeline'
 
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'mypackage'
+    downloadPath: '$(System.ArtifactsDirectory)'
 
 
