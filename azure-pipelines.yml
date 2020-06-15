@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'My_local_host_agent'
+pool: 'My_local_host_agent'
 
 variables:
   solution: '**/*.sln'
