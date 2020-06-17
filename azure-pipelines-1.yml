@@ -42,5 +42,5 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'myartifact'
+    artifactName: 'drop'
     downloadPath: '$(System.ArtifactsDirectory)'
